@@ -1,0 +1,16 @@
+@use 'variables' as v;
+@use 'base/mixins' as m;
+
+h1,h2,h3{
+    font-family: v.$fuentePrincipal;
+    line-height: 1.5;
+    margin: 0;
+}
+h1{
+    font-size: 3rem;
+}
+
+
+h3{
+    font-size: 2rem;
+}

@@ -1,0 +1,131 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.contacto{
+    background-color: #76c3a9;
+    
+    .info{
+        text-align: center;
+        h2{
+            @include m.headingBorder(v.$secundario, v.$blanco);
+        }
+    }
+}
+
+.formulario{
+    margin-top: 5rem;
+    font-size: 2rem;
+    width: 100%;
+    padding: 2rem;
+    border: 5px solid v.$blanco;
+    -webkit-box-shadow: 10px 10px 14px 2px rgba(255,255,255,0.51);
+    -moz-box-shadow: 10px 10px 14px 2px rgba(255,255,255,0.51);
+    box-shadow: 10px 10px 14px 2px rgba(255,255,255,0.51);
+
+    @include m.tablet{
+        width: 50%;
+    }
+
+    &__grupo{
+        margin: 0 auto 3rem auto;
+    }
+
+    &__label{
+        margin-bottom: 1rem;
+        display: block;
+        font-weight: 700;
+    }
+
+    &__grupo-input{
+        position: relative;
+    }
+
+    &__input{
+        width: 100%;
+        outline: none;
+        border: none;
+        padding: 1rem 0;
+
+        &::placeholder{
+            padding-left: 1rem;
+        }
+    }
+
+}
+
+.formulario__input-error{
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    display: none;
+    color: v.$blanco;
+    background-color: #bb2929;
+    padding: 1rem;
+}
+
+.formulario__input-error-activo{
+    display: block;
+}
+
+.formulario__validacion-estado{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 1000;
+    opacity: 0;
+}
+
+.formulario__checkbox{
+    margin-left: 1rem;
+}
+
+.formulario__mensaje{
+    margin: 3rem 0 3rem 1rem;
+    font-size: 2rem;
+    display: none;
+    border: 2px solid red;
+    padding: 1rem 0 1rem 1rem;
+    font-weight: 700;
+    b{
+        color: #f66060;
+    }
+
+    i{
+        color: #f66060;
+    }
+}
+
+.formulario__mensaje-activo{
+    display: block;
+}
+
+.formulario__grupo-correcto
+.formulario__validacion-estado{
+    color: #1ed12d;
+    opacity: 1;
+}
+
+.formulario__grupo-incorrecto
+.formulario__label{
+    color: #bb2929;
+}
+
+.formulario__grupo-incorrecto
+.formulario__validacion-estado{
+    color: #bb2929;
+    opacity: 1;
+}
+
+.formulario__grupo-incorrecto
+.formulario__input{
+    border: 3px solid #bb2929;
+}
+
+.exito{
+    border: 2px solid v.$blanco;
+    padding: 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 3rem;
+    color: v.$blanco;
+    background-color: #1b3740;
+}

@@ -1,0 +1,105 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.navigation{
+    position: fixed;
+    top: 50px;
+    right: 14px;
+    width: 250px;
+    height: 50px;
+    background: v.$primary;
+    transition: 0.5s;
+    z-index: 100000;
+    overflow: hidden;
+
+    @include m.tablet{
+        right: 50px;
+    }
+}
+
+.navigation.active{
+    height: 400px;
+}
+
+.navigation .toggle{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+    background: v.$primary;
+    display: flex;
+    align-items: center;
+    color: v.$blanco;
+    justify-content: flex-end;
+    padding: 0 2rem;
+    font-size: 2rem;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.navigation .toggle::before{
+    content: 'Menu';
+    margin-right: 10px;
+}
+
+.navigation .toggle.active::before{
+    content: 'Close';
+    margin-right: 10px;
+}
+
+.navigation .toggle span{
+    position: relative;
+    width: 2rem;
+    height: 5rem;
+}
+
+.navigation .toggle span::before{
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: v.$blanco;
+    transition: 0.5s;
+}
+
+.navigation .toggle span::after{
+    content: '';
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: v.$blanco;
+    transition: 0.5s;
+}
+
+.navigation .toggle.active span::before{
+    transform: rotate(225deg);
+    top: 24px;
+}
+
+.navigation .toggle.active span::after{
+    transform: rotate(135deg);
+    bottom: 24px;
+}
+
+.navigation ul{
+    position: relative;
+    background: #111;
+}
+.navigation ul li a{
+    position: relative;
+    display: block;
+    padding: 10px 20px;
+    height: 50px;
+    color: v.$blanco;
+    font-size: 1.8rem;
+    transition: 1s;
+}
+.navigation ul li a:hover{
+    transition: 0s;
+    background: v.$primary;
+}

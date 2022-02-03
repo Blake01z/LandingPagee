@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="icon" href="build/img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+   
+    <div class="navigation">
+        <div class="toggle"><span></span></div>
+        <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#about">Acerca De</a></li>
+            <li><a href="#benefits">Benficios</a></li>
+            <li><a href="#statistics">Estadisticas</a></li>
+            <li><a href="#plans">Planes</a></li>
+            <li><a href="#testimonials">Testimoniales</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </div>
+
+    <header class="site-header" id="home">
+        <div class="contenedor header-grid">
+            <div class="logo">
+                <img src="build/img/logo.svg" alt="logo poscast">
+            </div>
+            <div class="contenido-header">
+                <h1>Tu plataforma para publicar tus podcast</h1>
+                <a href="#formulario" class="btn-primario">Suscribirte</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="contenedor seccion" id="about">
+        <div class="crear-grid">
+            <div class="imagen">
+                <img src="build/img/imagen_podcast.svg" alt="iamgen del podcast">
+            </div>
+            <div class="contenido">
+                <h2>Crea tu Podcast</h2>
+                <p>Nosotros lo distribuimos a las plataformas mas populares como Google Podcast,
+                    Spotify, Apple Podcast y Youtube.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="beneficios seccion" id="benefits">
+        <div class="grid-beneficios contenedor">
+            <div class="contenido-beneficios">
+                <h2>Llega a miles y gana dinero</h2>
+                <p>
+                    Los podcast se han convertido en un medio de entretenimiento que
+                    cada dia gana más seguidores, con temas variados puedes crear tu propio podcast,
+                    ser escuchada(o) por miles de personas y convertir tu pasión en tu negocio.
+                </p>
+            </div>
+            <div class="imagen">
+                <img src="build/img/podcast_cover.png" alt="imagen podcast">
+            </div>
+        </div>
+    </section>
+
+    <section class="estadisticas seccion contenedor" id="statistics">
+        <h2>Estadisticas Detalladas</h2>
+        <p>Nosotros lo distribuimos a las plataformas más populares como
+            Google podcast, Spotify, Apple Podcast y Youtube.
+        </p>
+        <img src="build/img/grafica.svg" alt="imagen grafica">
+    </section>
+
+    <section class="planes seccion" id="plans">
+        <div class="contenedor">
+            <h2>Planes</h2>
+            <p class="descripcion">Inicia gratis, crece tu plan cuando sea necesario</p>
+            <div class="nuestros-planes">
+                <div class="plan inicio">
+                    <h3>Inicio</h3>
+                    <p class="precio">$2.99 Mes</p>
+                    <ul class="listado">
+                        <li>30 Episodios</li>
+                        <li>Estadisticas</li>
+                        <li>App para grabar</li>
+                    </ul>
+                    <a href="#formulario" class="boton-plan">Inscribirme</a>
+                </div><!--.plan-->
+                <div class="plan negocio">
+                    <h3>Negocio</h3>
+                    <p class="precio">$6.99 Mes</p>
+                    <ul class="listado">
+                        <li>Episodios Ilimitados</li>
+                        <li>Todas las plataformas</li>
+                        <li>Estadisticas</li>
+                        <li>App para grabar</li>
+                        <li>Podcast Pagados</li>
+                    </ul>
+                    <a href="#formulario" class="boton-plan">Inscribirme</a>
+                </div><!--.plan-->
+                <div class="plan pro">
+                    <h3>PRO</h3>
+                    <p class="precio">$4.99 Mes</p>
+                    <ul class="listado">
+                        <li>50 Episodios</li>
+                        <li>Todas las plataformas</li>
+                        <li>Estadisticas</li>
+                        <li>App para grabar</li>
+                    </ul>
+                    <a href="#formulario" class="boton-plan">Inscribirme</a>
+                </div><!--.plan-->
+            </div>
+        </div>
+    </section>
+
+    <section class="contenedor seccion testimoniales" id="testimonials">
+        <div class="imagen">
+            <img src="build/img/blake.jpg" alt="Imagen podcast">
+        </div>
+        <div class="contenido">
+            <h2>Testimoniales</h2>
+
+            <div class="testimonial">
+                <p>
+                    Gracias a sus planes logre obtener una mayor audiencia y pude impactar a mas personas.
+                </p>
+            </div>
+            <div class="testimonial">
+                <p>
+                    Sus precios son accesibles y tienen una atencion muy buena, siempre que he tenido dudas me las resuelven enseguida.
+                </p>
+            </div>
+            <div class="testimonial">
+                <p>
+                    Su plataforma es muy sencilla de utilizar y tiene te ayuda mucho a la creacion de tus posdcast
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacto seccion" id="contact">
+        <div class="contenedor info">
+            <h2>Contactanos</h2>
+        </div>
+
+        <form action="#" class="formulario contenedor" id="formulario">
+
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">Nombre</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Escribe tu nombre">
+                    <i class="fas fa-times-circle formulario__validacion-estado"></i>
+                </div>
+                <p class="formulario__input-error">
+                    El nombre no debe estar vacio o contener acentos ni caracteres especiales!.
+                </p>
+            </div>
+
+            <div class="formulario__grupo" id="grupo__email">
+                <label for="email" class="formulario__label">Email</label>
+                <div class="formulario__grupo-input">
+                    <input type="email" class="formulario__input" name="email" id="email" placeholder="Escribe tu email">
+                    <i class="fas fa-times-circle formulario__validacion-estado"></i>
+                </div>
+                <p class="formulario__input-error">
+                    Debes de ingresar un email valido.
+                </p>
+            </div>
+
+            <div class="formulario__grupo" id="grupo__telefono">
+                <label for="telefono" class="formulario__label">Telefono</label>
+                <div class="formulario__grupo-input">
+                    <input type="tel" class="formulario__input" name="telefono" id="telefono" placeholder="Escribe tu telefono">
+                    <i class="fas fa-times-circle formulario__validacion-estado"></i>
+                </div>
+                <p class="formulario__input-error">
+                    El telefono solo puede contener numeros y debe ser igual a 10 digitos.
+                </p>
+            </div>
+
+            <div class="formualrio__grupo" id="grupo__terminos">
+                <label class="formulario__label">
+                    <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                    Acepto los Terminos y Condiciones.
+                </label>
+            </div>
+
+            <div class="formulario__mensaje" id="formulario__mensaje">
+                <p><i class="fas fa-exclamation-triangle"></i>
+                    <b>Error:</b> Todos los campos son necesarios.
+                </p>
+            </div>
+
+            <div class="formulario__grupo-btn-enviar">
+                <input type="submit" class="boton-form"/>
+            </div>
+        </form>
+    </section>
+
+
+    <script src="build/js/app.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+</html>

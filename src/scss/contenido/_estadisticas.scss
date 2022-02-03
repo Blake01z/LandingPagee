@@ -1,0 +1,15 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.estadisticas{
+
+    h2{
+        @include m.headingBorder(v.$secundario, v.$primary);
+    }
+
+    p {
+        margin: 1.4rem 0;
+        font-size: 2rem;
+        line-height: 2;
+    }
+}
